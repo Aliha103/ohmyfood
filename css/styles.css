@@ -3,6 +3,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  font-family: Roboto;
 }
 
 @media screen and (max-width: 768px) {
@@ -157,6 +158,80 @@ body {
     background-color: blue;
     padding: 2% 5% 0 0;
   }
+  /*styling for title of website for mobile screen*/
+  #page-titile {
+    font-family: Shrikhand;
+    cursor: pointer;
+  }
+  #page-titile img {
+    width: 300%;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  /*styling for MAIN part of website for mobile screen*/
+  main {
+    background-color: #f2f2f2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    max-width: 100%;
+  }
+  main #Res-name {
+    font-family: Shrikhand;
+    font-size: 18px;
+  }
+  /*styling for desserts for mobile screen*/
+  #desserts-menu,
+  #maindish-menu,
+  #entress-menu {
+    font-family: Roboto;
+    padding: 2%;
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+  }
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    margin: 0 4% 4% 0;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  section h3 {
+    padding: 0 3% 0 3%;
+    font-size: 20px;
+  }
+  section div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3% 0 3%;
+    font-size: 18px;
+  }
+  /* styling for order button for mobile screen*/
+  #order-btn {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 5% 0 10% 0;
+  }
+  #order-btn .order-btn {
+    width: 25%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(215, 112, 186, 0.9568627451);
+    color: white !important;
+    font-family: Roboto;
+    font-size: 20px !important;
+    border: transparent;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
   /* Footer css*/
   #footer--details {
     display: flex;
@@ -164,7 +239,10 @@ body {
     background-color: #373535;
     color: #f2f2f2;
     width: 100% !important;
-    padding: 2% 0 4% 3%;
+    margin-top: 22%;
+  }
+  #footer--details .footer-logo {
+    font-family: Shrikhand !important;
   }
   #footer--details .footer--suggestion {
     display: flex;

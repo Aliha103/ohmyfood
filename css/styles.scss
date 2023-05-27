@@ -1,8 +1,15 @@
+$logo-font: Shrikhand;
+$text-font: Roboto;
+$headline-size:20px;
+$text-fontsize:18px;
+
+
 body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    font-family: $text-font;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,7 +178,8 @@ body {
                 margin-top: -10px;
                 padding: 0% 2% 2% 2%;
             }
-            .new-restaurants{
+
+            .new-restaurants {
                 position: relative;
                 float: right;
                 background-color: blue;
@@ -182,6 +190,94 @@ body {
     }
 
 
+
+    /*styling for title of website for mobile screen*/
+    #page-titile{
+        font-family:$logo-font;
+        cursor: pointer;
+
+        img{
+            width: 300%;
+            height: 300px;
+            object-fit:contain;
+        }
+    }
+
+    /*styling for MAIN part of website for mobile screen*/
+    main{
+        background-color: #f2f2f2;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        width: 100%;
+        max-width: 100%;
+        
+        #Res-name{
+            font-family: $logo-font;
+            font-size: $text-fontsize;
+        }
+    }
+
+    /*styling for desserts for mobile screen*/
+    #desserts-menu,
+    #maindish-menu,
+    #entress-menu{
+        font-family: $text-font;
+        padding: 2%;
+        font-size: 20px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+        margin: 0 4% 4% 0;
+        border-radius: 25px;
+        box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
+
+        h3{
+            padding: 0 3% 0 3%;
+            font-size: $headline-size;
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 3% 0 3%;
+            font-size:$text-fontsize;
+        }
+
+
+    }
+
+
+    /* styling for order button for mobile screen*/
+
+    #order-btn {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        padding: 5% 0 10% 0;
+
+        .order-btn {
+            width: 25%;
+            height: 50px;
+            border-radius: 25px;
+            background-color: #d770baf4;
+            color: white !important;
+            font-family: $text-font;
+            font-size: $headline-size !important;
+            border: transparent;
+            box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
+            cursor: pointer;
+        }
+    }
+
     /* Footer css*/
     #footer--details {
         display: flex;
@@ -189,7 +285,11 @@ body {
         background-color: #373535;
         color: #f2f2f2;
         width: 100% !important;
-        padding: 2% 0 4% 3%;
+        margin-top: 22%;
+
+        .footer-logo {
+            font-family: $logo-font !important;
+        }
 
         .footer--suggestion {
             display: flex;

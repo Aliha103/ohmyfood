@@ -7,9 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Shrikhand:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         crossorigin="anonymous">
     <title>Ohmyfood</title>
@@ -18,15 +26,15 @@
 <body>
     <header id="page-titile">
         <h1>Ohmyfood</h1>
-        <img src="#" alt="The Full Palette">
+        <img src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
     </header>
     <main>
         <div id="Res-name">
             <h2>The Full Palette</h2>
-            <i fa-solid fa heart></i>
+            <i class="fa-thin fa-heart"></i>
         </div>
-         <!---entrees details for the full palette-->
-        <p>ENTRESS</p>
+        <!---entrees details for the full palette-->
+        <p id="entress-menu">ENTRESS</p>
         <section>
             <h3>Escargot</h3>
             <div>
@@ -48,8 +56,8 @@
                 <p>20€</p>
             </div>
         </section>
-         <!---main dish details for the full palette-->
-        <p>MAIN DISH</p>
+        <!---main dish details for the full palette-->
+        <p id="maindish-menu">MAIN DISH</p>
         <section>
             <h3>Herb-Encrusted Steak</h3>
             <div>
@@ -72,7 +80,7 @@
             </div>
         </section>
         <!---desserts details for the full palette-->
-        <p>DESSERTS</p>
+        <p id="desserts-menu">DESSERTS</p>
         <section>
             <h3>Paris-Brest</h3>
             <div>
@@ -94,11 +102,13 @@
                 <p>23€</p>
             </div>
         </section>
-        <button>Order</button>
+        <div id="order-btn">
+            <button class="order-btn"><a src="#">Order</a></button>
+        </div>
     </main>
     <!---Footer details for website-->
     <footer id="footer--details">
-        <a href="index.html"><img src="/assets/logo/ohmyfood.png"></a>
+        <h2 class="footer-logo">ohmyfood</h2>
         <div class="footer--suggestion">
             <i class="fa-sharp fa-solid fa-utensils"></i>
             <p class="suggestion--para">Suggest a restaurant</p>
