@@ -26,17 +26,19 @@
 <body>
     <header>
         <a href="index.html"><img src="/assets/logo/ohmyfood.png" alt="Ohmyfood"></a>
-
+    </header>
+    <container id="first-part-index">
         <div class="location--point">
             <i class="fa-solid fa-location-dot"></i>
             <location>Paris, Belleville</location>
         </div>
-    </header>
-    <div id="intro--page" class="intro--page">
-        <h2 class="intro--heading">Book the menu you like</h2>
-        <p class="intro--para">Discover top-of-theart restaurants we picked for you</p>
-        <button class="intro--btn" type="button"><a href="#">Explore our restaurants</a></button>
-    </div>
+        <div id="intro--page" class="intro--page">
+            <h2 class="intro--heading">Book the menu you like</h2>
+            <p class="intro--para">Discover top-of-theart restaurants we picked for you</p>
+            <button class="intro--btn" type="button"><a href="#">Explore our restaurants</a></button>
+        </div>
+    </container>
+
     <!--selection menu html for a website-->
     <section id="selecting-menu">
         <h3 class="selecting--heading">How it works</h3>
@@ -63,9 +65,9 @@
         <h2 class="restaurants--details--heading">Restaurants</h2>
         <form class="restaurants-lists">
             <div class="restaurant--newer">
-            <div class="new-restaurants">New</div>
-            <img src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
-        </div>
+                <div class="new-restaurants">New</div>
+                <img src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
+            </div>
             <div class="lists--heading">
                 <h3>The Full Palette</h3>
                 <i class="fa-solid fa-heart"></i>
@@ -99,19 +101,21 @@
         </form>
     </main>
 
-    <!-- footer html for website -->
+    <!---Footer details for website-->
     <footer id="footer--details">
-        <h2 class="footer-logo">ohmyfood</h2>
-        <div class="footer--suggestion">
-            <i class="fa-sharp fa-solid fa-utensils"></i>
-            <p class="suggestion--para">Suggest a restaurant</p>
-        </div>
-        <div class="footer--collabration">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p class="collabrartion--p">Become a partner</p>
-        </div>
-        <p class="footer--legalisation">Legal</p>
-        <p class="footer--contact">Contact</p>
+        <container class="footer-container">
+            <h2 class="footer-logo">ohmyfood</h2>
+            <div class="footer--suggestion">
+                <i class="fa-sharp fa-solid fa-utensils"></i>
+                <p class="suggestion--para">Suggest a restaurant</p>
+            </div>
+            <div class="footer--collabration">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <p class="collabrartion--p">Become a partner</p>
+            </div>
+            <p class="footer--legalisation">Legal</p>
+            <p class="footer--contact">Contact</p>
+        </container>
     </footer>
 </body>
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Shrikhand:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         crossorigin="anonymous">
     <title>Ohmyfood</title>
@@ -25,31 +24,33 @@
 
 <body>
     <header id="page-titile">
-        <h1>Ohmyfood</h1>
-        <img src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
+        <a href="/html/the-full-palette.html"><h1>Ohmyfood</h1></a>
     </header>
+    <section id="img-title">
+        <img src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full Palette">
+    </section>
     <main>
         <div id="Res-name">
             <h2>The Full Palette</h2>
-            <i class="fa-thin fa-heart"></i>
+            <i class="fa fa-heart favourtism"></i>
         </div>
         <!---entrees details for the full palette-->
         <p id="entress-menu">ENTRESS</p>
-        <section>
+        <section class="menu-card">
             <h3>Escargot</h3>
             <div>
                 <p>With southern French spices</p>
                 <p>25€</p>
             </div>
         </section>
-        <section>
+        <section class="menu-card">
             <h3>Duck Foie Gras</h3>
             <div>
                 <p>With black truffle shavings</p>
                 <p>35€</p>
             </div>
         </section>
-        <section>
+        <section class="menu-card">
             <h3>Fried egg</h3>
             <div>
                 <p>Seasoned with truffle cream and...</p>
@@ -58,21 +59,21 @@
         </section>
         <!---main dish details for the full palette-->
         <p id="maindish-menu">MAIN DISH</p>
-        <section>
+        <section class="menu-card">
             <h3>Herb-Encrusted Steak</h3>
             <div>
                 <p>With delicately sliced and seasoned veg...</p>
                 <p>40€</p>
             </div>
         </section>
-        <section>
+        <section class="menu-card">
             <h3>Ox Tail Shephard's Pie</h3>
             <div>
                 <p>With black truffle and pureed parshnips</p>
                 <p>35€</p>
             </div>
         </section>
-        <section>
+        <section class="menu-card">
             <h3>Filet of Sole</h3>
             <div>
                 <p>With citrus dressing</p>
@@ -81,21 +82,21 @@
         </section>
         <!---desserts details for the full palette-->
         <p id="desserts-menu">DESSERTS</p>
-        <section>
+        <section class="menu-card">
             <h3>Paris-Brest</h3>
             <div>
                 <p>Revisited</p>
                 <p>18€</p>
             </div>
         </section>
-        <section>
+        <section class="menu-card">
             <h3>Chocolate Macaroons</h3>
             <div>
                 <p>With vanilla ice cream</p>
                 <p>22€</p>
             </div>
         </section>
-        <section>
+        <section class="menu-card">
             <h3>Chocolate Mousse</h3>
             <div>
                 <p>With spices and black truffle</p>
@@ -108,17 +109,19 @@
     </main>
     <!---Footer details for website-->
     <footer id="footer--details">
-        <h2 class="footer-logo">ohmyfood</h2>
-        <div class="footer--suggestion">
-            <i class="fa-sharp fa-solid fa-utensils"></i>
-            <p class="suggestion--para">Suggest a restaurant</p>
-        </div>
-        <div class="footer--collabration">
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p class="collabrartion--p">Become a partner</p>
-        </div>
-        <p class="footer--legalisation">Legal</p>
-        <p class="footer--contact">Contact</p>
+        <container class="footer-container">
+            <h2 class="footer-logo">ohmyfood</h2>
+            <div class="footer--suggestion">
+                <i class="fa-sharp fa-solid fa-utensils"></i>
+                <p class="suggestion--para">Suggest a restaurant</p>
+            </div>
+            <div class="footer--collabration">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <p class="collabrartion--p">Become a partner</p>
+            </div>
+            <p class="footer--legalisation">Legal</p>
+            <p class="footer--contact">Contact</p>
+        </container>
     </footer>
 </body>
 
